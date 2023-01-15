@@ -1,0 +1,12 @@
+name: Herobrine
+main: net.devilmanCr0.herobrine.Herobrine
+version: 2.4.0
+description: "Bring Herobrine to your Spigot-based Minecraft server!"
+website: https://www.devilmanCr0.net
+api-version: 1.19
+load: STARTUP
+commands:
+    herobrine:
+      description: Main command.
+      usage: /herobrine help
+      aliases: [hero, hb]

@@ -1,37 +1,42 @@
-# HerobrineAI
-[![Build Status](http://jenkins.logicshard.com/buildStatus/icon?job=HerobrineAI)](http://jenkins.logicshard.com/job/HerobrineAI/)
+# Herobrine 2 #
 
-=========
+----
 
-HerobrineAI is server-side bukkit plugin for Minecraft that creates Herobrine with custom AI and skin.  
-Plugin has many features and it is based on the legend of Herobrine.  
+ A fork repository of [David B's Herobrine2 Repo](https://bitbucket.org/David-B/herobrine-2/)
+ Original Author [jakub1221](https://github.com/jakub1221/herobrineai)
 
-Contributing 
----------
-This is an old project and there are some parts of code that are poorly written, feel free to pull any refactored code.
+----
 
-Building
----------
-**Maven with jdk7+ is required**
+ 
+### How do I contribute? ###
 
-**1. Clone project**  
-```
-git clone git://github.com/jakub1221/HerobrineAI.git 
-```
+To contribute to the project, [fork](https://bitbucket.org/devilmancr0/herobrine-2/fork) the Herobrine 2 repository, make whatever changes you desire to the code, and submit a pull request. I will review your changes and merge them if they are acceptable. Any changes, whether they are bug fixes or new features, are welcome.
 
-**2. Install maven with jdk**  
-[Tutorial here](http://maven.apache.org/install.html)
+The recommended IDE for working on this project is Eclipse
 
-**3. Install Craftbukkit**  
-Plugin uses NMS code that is located in craftbukkit.  
-In order to get craftbukkit installed to local maven repository you need to run [BuildTools](https://www.spigotmc.org/wiki/buildtools/).
+### Contribution guidelines ###
 
-**4. Build plugin**  
-```
-mvn clean install
-```
-Plugin will be located in target directory after building is done.
+Pull requests that do not provide detail on what changes were made to the code will be denied without a review. Please provide adequate information on the changes you made to the code.
 
-Downloads
----------
-You can download latest build from jenkins site [here](http://jenkins.logicshard.com/job/HerobrineAI/).
+### Building/Compiling ###
+
+To build this project you will need:
+
+- Java JDK (version 17 or newer)
+- Git
+
+To build the project:
+
+1. Clone this repository.
+2. Run `gradlew build` inside the root directory of the cloned repository.
+3. The jar file will be in `build/libs/Herobrine 2.jar`.
+
+Voila!
+
+### Current Issues ###
+
+Unfortunately, due to the restraints of changed packet protocols in 1.19.3, Herobrine is currently invisible.
+Functionalities such as building structures and damaging players still work but the main heart of the plugin is, at large,
+unavaliable.
+Any help and contributions torwards David's repo is greatly appreciated. Work around Herobrine's visibility is needed.
+
